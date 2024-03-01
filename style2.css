@@ -1,0 +1,75 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+    gap: 20px; /* Adjusts the gap between grid items */
+    padding: 20px; /* Optional: Adds some padding around the grid */
+}
+
+.gallerytwo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates three columns */
+    gap: 20px; /* Adjusts the gap between grid items */
+    padding: 20px; /* Optional: Adds some padding around the grid */
+}
+
+.gallerythree {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Creates three columns */
+    gap: 20px; /* Adjusts the gap between grid items */
+    padding: 20px; /* Optional: Adds some padding around the grid */
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers the content vertically */
+    text-align: center; /* Ensures the text is centered */
+}
+
+.item img {
+    max-width: 80%; /* Adjusts the maximum width of the images to be 80% of their container */
+    margin-bottom: 10px; /* Adds some space between the image and the text */
+    width: 300px; /* Adjust this value to make the images smaller or larger */
+    height: auto; /* This ensures the images maintain their aspect ratio */
+    display: block; /* This can help with centering if needed */
+    margin: 0 auto; /* This centers the images within their containers */
+}
+
+
+.item p {
+    text-align: center; /* Centers the text under the image */
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+.style1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Press Start 2P";
+    font-size: 40px;
+    color: rgb(248, 167, 181);
+  }
+
+  .my-gif {
+    width: 600px; /* Example: Make the GIF full width */
+    /* Any other specific styles you want for this GIF */
+}
+
+.gif-style {
+    width: 300px; /* Matches the width of your images for consistency */
+    display: block; /* Ensures the GIF is block level for margin auto to work */
+    margin: 10px auto; /* Centers the GIF and adds some space above and below */
+    height: auto; /* Maintains the aspect ratio of the GIF */
+}
